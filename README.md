@@ -1,19 +1,9 @@
-<img width="962" alt="1" src="https://user-images.githubusercontent.com/73014464/126436071-4bc9a9a6-a607-4e59-b8d0-f0225eccef71.png">
-<img width="961" alt="2" src="https://user-images.githubusercontent.com/73014464/126436084-b5c5cbca-a345-46e5-a87c-ed0942b8a119.png">
-<img width="961" alt="3" src="https://user-images.githubusercontent.com/73014464/126436088-9dc0e0e2-dd74-4062-b86b-a1878383422b.png">
-<img width="962" alt="4" src="https://user-images.githubusercontent.com/73014464/126436093-62375c00-1972-45a3-b888-8dbcc5afa48d.png">
-
-2. CMD에서 조직, 소유자 추가 시연
-
-https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-ae3f-85236879e270.mp4
-
-<img width="962" alt="5" src="https://user-images.githubusercontent.com/73014464/126436098-c6672bc3-2996-410a-bda5-5d7a61428020.png">
 
 <h1>GoBlock 5팀 Marbles UI design 변경 </h1>
 
 <br>
 <br>
-<h2>[기존 marble UI design의 아쉬움]</h2>
+<h2>🚀[기존 marble UI design의 아쉬움]</h2>
 <img width="711" alt="기존마블디자인" src="https://user-images.githubusercontent.com/84368302/126470062-9251dd22-c83b-49e3-b34f-a0110bf7277c.PNG">
 <br>
 <ul>
@@ -23,7 +13,7 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 
 <br>
 <br>
-<h2>[Marbles-Clover Wallet UI]</h2>
+<h2>🚀[Marbles-Clover Wallet UI]</h2>
 <img width="711" alt="메인화면과 타이틀" src="https://user-images.githubusercontent.com/84368302/126471515-8fce71f0-026a-45ee-9ad4-7ecd1110ff19.gif">
 <br>
 <ul>
@@ -34,7 +24,7 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 
 <br>
 <br>
-<h2>[What is Clover Wallet]</h2>
+<h2>🚀[What is Clover Wallet]</h2>
 <img width="711" alt="로고선정 의미" src="https://user-images.githubusercontent.com/84368302/126471907-daf03d36-fba9-4d9e-a34b-171f27de0170.gif">
 <br>
 <hr>
@@ -49,5 +39,13 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
   <li>구름으로 이루어진 배경, 알록달록한 자산 등을 동적인 이미지로 구성함</li>
   <li>블록체인과 비트코인 이 가지고 있던 부정적이고 도박성이 강한 이미지를 탈피해보고자 </li>
 </ul>
+
+
+
+
+2. CMD에서 조직, 소유자 추가 시연
+
+https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-ae3f-85236879e270.mp4
+
 
 
