@@ -1,6 +1,16 @@
 
 <h1>GoBlock 5팀 Marbles UI design 변경 </h1>
 <hr>
+
+
+<br>
+<br>
+<hr>
+<h2>🚀[작업환경]</h2>
+<img width="1177" alt="작업환경" src="https://user-images.githubusercontent.com/84368302/126476707-8df9c7c4-30d1-4d6f-a2ad-2202e3e5feed.PNG">
+<hr>
+<br>
+<br>
 <br>
 <br>
 <hr>
@@ -59,12 +69,12 @@
 <br>
 <hr>
 <h2>🚀[Marbles 자산 추가]</h2>
-
+<img width="711" alt="로고선정 의미" src="https://user-images.githubusercontent.com/84368302/126477209-784cf374-3b03-4f0a-8e59-a2275b8c3ef8.gif">
 <br>
 <p>구슬컬러와 사이즈를 선택하여 추가하면 소유자의 지갑에 구슬이 추가됩니다.</p>
 <p>기존 구슬 자산의 색상은 너무 단조로워 보였습니다.</p> 
 <p> 컨셉에 맞게 다채로워 보이도록 구슬자산들을 그라데이션 색상으로 효과를 주었습니다.</p>
-   
+  
    
 <br>
 <br>
