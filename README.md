@@ -82,10 +82,10 @@
 <h2>🚀[ CMD에서 조직, 소유자 추가 시연]</h2>
 "https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-ae3f-85236879e270.mp4"
 <br>
-<p>peer의 보조 명령으로 chaincode명령이 존재하는데 chaincode의 query 명령으로 체인코드에 질의 하고 invoke 명령으로 원장 갱신에 따른 실제 블록체인 트랜잭션을 발생시킴.</p>
-<p>체인코드를 실행할 때  '채널', '체인코드 이름', '체인코드 API 이름', '체인코드 인수'를 명령으로 지정하는데 여기서는 각각 mychannel, marbles, 'init_owner', 'o123', 'Bob', 'Beedama’ 를 지정해줌.</p>
-<p>invoke명령 수행 시 -o 옵션을 사용해 오더러를 지정해주고 basic_network 구성에 맞춰 localhost:7050를 지정해줌.</P>
-<p>수행된 결과를 보면 "Beedama" 사와 자산 소유자 "Bob" 이추가된 것을 확인된걸 볼 수 있음.</p>
+<p>1.peer의 보조 명령으로 chaincode명령이 존재하는데 chaincode의 query 명령으로 체인코드에 질의 하고 invoke 명령으로 원장 갱신에 따른 실제 블록체인 트랜잭션을 발생시킴.</p>
+<p>2.체인코드를 실행할 때  '채널', '체인코드 이름', '체인코드 API 이름', '체인코드 인수'를 명령으로 지정하는데 여기서는 각각 mychannel, marbles, 'init_owner', 'o123', 'Bob', 'Beedama’ 를 지정해줌.</p>
+<p>3.invoke명령 수행 시 -o 옵션을 사용해 오더러를 지정해주고 basic_network 구성에 맞춰 localhost:7050를 지정해줌.</P>
+<p>4.수행된 결과를 보면 "Beedama" 사와 자산 소유자 "Bob" 이추가된 것을 확인된걸 볼 수 있음.</p>
 
 
 
