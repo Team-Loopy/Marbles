@@ -10,11 +10,10 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 <img width="962" alt="5" src="https://user-images.githubusercontent.com/73014464/126436098-c6672bc3-2996-410a-bda5-5d7a61428020.png">
 
 <h1>GoBlock 5팀 Marbles UI design 변경 </h1>
-<br>
-<br>
 
+<br>
+<br>
 <h2>[기존 marble UI design의 아쉬움]</h2>
-
 <img width="711" alt="기존마블디자인" src="https://user-images.githubusercontent.com/84368302/126470062-9251dd22-c83b-49e3-b34f-a0110bf7277c.PNG">
 <br>
 <ul>
@@ -26,11 +25,24 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 <br>
 <h2>[Marbles-Clover Wallet UI]</h2>
 <img width="711" alt="메인화면과 타이틀" src="https://user-images.githubusercontent.com/84368302/126471515-8fce71f0-026a-45ee-9ad4-7ecd1110ff19.gif">
-
 <br>
 <ul>
   <li>개방감 있는 디자인을 위해 타이틀을 크고 넓게 잡고 눈에 잘보일만한 색상으로 변경</li>
   <li>한군데 몰려있는 버튼을 footer에 내리고 전체적인 UI를 직관적이게 수정</li>
-  <li>메인 기능인 자산지갑을 세로로 정렬시키고 프레임을 넓게 잡아 보다 직관적이게 </li>
+  <li>메인 기능인 자산지갑을 세로로 정렬시키고 프레임을 넓게 잡아 보다 직관적이게 수정</li>
 </ul>
+
+<br>
+<br>
+<h2>[What is Clover Wallet]</h2>
+<img width="711" alt="로고선정 의미" src="https://user-images.githubusercontent.com/84368302/126471907-daf03d36-fba9-4d9e-a34b-171f27de0170.gif">
+<br>
+<h3>트럼프 카드에서 Clover는 시민을 뜻한다.</h3>
+<p>트럼프 카드게임처럼 오늘날의 블록체인은 오락성과 사행성이 강한 이미지입니다.</p>
+<p>Clover wallet은 .</p>
+<ul>
+  <li></li>
+  <li></li>
+</ul>
+
 
