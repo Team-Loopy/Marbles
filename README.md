@@ -1,8 +1,9 @@
 
 <h1>GoBlock 5팀 Marbles UI design 변경 </h1>
-
+<hr>
 <br>
 <br>
+<hr>
 <h2>🚀[기존 marble UI design의 아쉬움]</h2>
 <img width="711" alt="기존마블디자인" src="https://user-images.githubusercontent.com/84368302/126470062-9251dd22-c83b-49e3-b34f-a0110bf7277c.PNG">
 <br>
@@ -13,6 +14,7 @@
 
 <br>
 <br>
+<hr>
 <h2>🚀[Marbles-Clover Wallet UI]</h2>
 <img width="711" alt="메인화면과 타이틀" src="https://user-images.githubusercontent.com/84368302/126471515-8fce71f0-026a-45ee-9ad4-7ecd1110ff19.gif">
 <br>
@@ -24,16 +26,17 @@
 
 <br>
 <br>
+<hr>
 <h2>🚀[What is Clover Wallet]</h2>
 <img width="711" alt="로고선정 의미" src="https://user-images.githubusercontent.com/84368302/126471907-daf03d36-fba9-4d9e-a34b-171f27de0170.gif">
 <br>
-<hr>
+
 <h3>[Clover wallet 컨셉]</h3>
 <p>트럼프 카드에서 Clover는 시민을 뜻합니다.<p>
 <p>트럼프 카드게임처럼 오늘날의 블록체인은 오락성과 사행성이 강한 이미지입니다.</p>
 <p>Clover wallet은 특정단체나 개인이아닌 참여하는 모든 시민을 위한 분산원장입니다..</p>
 <br>
-<hr>
+
 <ul>
   <li>컨셉에 맞게 디자인 적인 측면에서 밝고 화사한 분위기로 구성</li>
   <li>구름으로 이루어진 배경, 알록달록한 자산 등을 동적인 이미지로 구성함</li>
