@@ -82,7 +82,6 @@
 <h2>🚀[ CMD에서 조직, 소유자 추가 시연]</h2>
 <img width="711" alt="로고선정 의미" src="https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-ae3f-85236879e270.mp4">
 
-https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-ae3f-85236879e270.mp4
 
 
 
