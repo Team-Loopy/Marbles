@@ -25,7 +25,7 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 <br>
 <br>
 <h2>[Marbles-Clover Wallet UI]</h2>
-![메인화면과-타이틀](https://user-images.githubusercontent.com/84368302/126471515-8fce71f0-026a-45ee-9ad4-7ecd1110ff19.gif)
+<img width="711" alt="메인화면과 타이틀" src="https://user-images.githubusercontent.com/84368302/126471515-8fce71f0-026a-45ee-9ad4-7ecd1110ff19.gif">
 
 <br>
 <ul>
