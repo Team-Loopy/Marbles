@@ -16,10 +16,12 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 
 
 <h2>[기존 marble UI design의 아쉬움]</h2>
-![image](https://user-images.githubusercontent.com/84368302/126467403-171f64c2-bc22-4c44-bf76-afbf73955c78.png)
+
+<img width="711" alt="기존마블디자인" src="https://user-images.githubusercontent.com/84368302/126470062-9251dd22-c83b-49e3-b34f-a0110bf7277c.PNG">
+
 <ul>
   <li>메인화면 최상단에 너무 많은 기능들과 버튼, 글들이 몰려있어 직관적이지 않다.</li>
   <li>한군데 몰려있는 버튼들 때문에 Demo file이 보여주려는 </li>
-  
+</ul>
 
 ![로고선정의미](https://user-images.githubusercontent.com/84368302/126465956-c96bca90-b73b-49c2-a947-af0bdcd366fc.gif)
