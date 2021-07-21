@@ -25,7 +25,8 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 <br>
 <br>
 <h2>[Marbles-Clover Wallet UI]</h2>
-![메인화면과-타이틀](https://user-images.githubusercontent.com/84368302/126470907-bdf190d1-da8b-41bc-9078-a1b697356ac4.gif)
+![메인화면과-타이틀](https://user-images.githubusercontent.com/84368302/126471515-8fce71f0-026a-45ee-9ad4-7ecd1110ff19.gif)
+
 <br>
 <ul>
   <li>개방감 있는 디자인을 위해 타이틀을 크고 넓게 잡고 눈에 잘보일만한 색상으로 변경</li>
