@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 <h2>[기존 marble UI design의 아쉬움]</h2>
 
 <img width="711" alt="기존마블디자인" src="https://user-images.githubusercontent.com/84368302/126470062-9251dd22-c83b-49e3-b34f-a0110bf7277c.PNG">
-
+<br>
 <ul>
   <li>메인화면 최상단에 너무 많은 기능들과 버튼, 글들이 몰려있어 직관적이지 않다.</li>
   <li>한군데 몰려있는 버튼들 때문에 Demo file이 보여주려는 목적이 불분명해 보인다.</li>
@@ -24,5 +24,12 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 
 <br>
 <br>
-<h2>[기존 marble UI design의 아쉬움]</h2>
-![로고선정의미](https://user-images.githubusercontent.com/84368302/126465956-c96bca90-b73b-49c2-a947-af0bdcd366fc.gif)
+<h2>[Marbles-Clover Wallet UI]</h2>
+![메인화면과-타이틀](https://user-images.githubusercontent.com/84368302/126470907-bdf190d1-da8b-41bc-9078-a1b697356ac4.gif)
+<br>
+<ul>
+  <li>개방감 있는 디자인을 위해 타이틀을 크고 넓게 잡고 눈에 잘보일만한 색상으로 변경</li>
+  <li>한군데 몰려있는 버튼을 footer에 내리고 전체적인 UI를 직관적이게 수정</li>
+  <li>메인 기능인 자산지갑을 세로로 정렬시키고 프레임을 넓게 잡아 보다 직관적이게 </li>
+</ul>
+
