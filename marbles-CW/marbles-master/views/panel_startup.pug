@@ -1,0 +1,282 @@
+#startUpPanel.hideMe
+
+	span.fa.fa-close#closeStartUp.closeStartUp
+
+	#stepWelcomeWrap
+		#rightSide
+			.headingText
+				span 환영합니다&nbsp;
+				strong 하이퍼레져 퍼블릭&nbsp;
+				span Clover 지갑 데모!
+
+			br
+			p.centerText
+				span.chooseTxt 어떻게 설정할까요?
+
+				br
+
+				span.hint.guideHints(style="margin-left: -170px;")
+					span fabric을 이용해 보신 적이 있나요? 여기서 기본설정이 가능합니다.&nbsp;&nbsp;
+					span.fa.fa-arrow-right
+				button.guideButtons#instantSetup
+					span.fa.fa-rocket &nbsp;&nbsp;&nbsp;
+					span 빠르게 시작하기
+				span &nbsp;&nbsp;&nbsp;
+				button.guideButtons#startSteps
+					span.fa.fa-gears &nbsp;&nbsp;&nbsp;
+					span 가이드
+				span.hint.guideHints
+					span.fa.fa-arrow-left
+					span &nbsp;&nbsp; 패브릭에 대해 알아보기 Or 사용자설정
+				br
+				br
+
+				#wait4cc.warningWrap
+					p 체인코드가 시작되고 있습니다. 기다려주세요...
+					#dateChecked 체크중
+
+				#failedSetup.warningWrap
+					p
+						span.fa.fa-bug &nbsp;&nbsp;&nbsp;
+						span Boo, 구성 또는 네트워크에 문제가 있습니다.&nbsp;
+						span 엔터 &nbsp;
+						strong 가이드
+						spansetup &nbsp;수정하도록 설정합니다.
+
+			div.centerText
+				include ./template/loading.pug
+
+	//----------------- Step Navigation
+	#stepsWrap
+		.oneStepWrap(stepid="step1").successfulStepIcon.onStep
+			.stepIcon.bounce 1
+		.oneStepWrap(stepid="step2")
+			.stepDivide
+			.stepIcon 2
+		.oneStepWrap.inactive(stepid="step3")
+			.stepDivide
+			.stepIcon 3
+		.oneStepWrap.inactive(stepid="step4")
+			.stepDivide
+			.stepIcon 4
+		.oneStepWrap.inactive(stepid="step5")
+			.stepDivide
+			.stepIcon 5
+		#stepsTitle 완료하려면 5단계가 있습니다. 해당 단계로 이동하려면 단계를 클릭하십시오.
+
+
+	#detailsWrap
+
+		//----------------- Step 1 Content [Check Settings + Welcome]
+		#step1.stepWrap.success
+			.stepHeader
+				span.fa.fa-gear
+				span &nbsp;&nbsp;연결 프로필 데이터 확인
+			.stepDescription
+				span 첫 번째 단계는 연결 프로필 JSON에서 실수를 확인하는 것입니다.
+				br
+				if bag.using_env
+					span 설정에서 연결 프로필에 대한 환경 변수를 사용하고 있습니다.
+					span 편집해야 하는 경우 Clover를 다시 시작해야 합니다.
+				else
+					span 확인된 파일:&nbsp;
+					span.backgroundMe /config/#{bag.config_filename}
+					span &nbsp;and&nbsp;
+					span.backgroundMe /config/#{bag.cp_filename}
+					span &nbsp;.
+
+				br
+				br
+				span 결과는 아래에 있습니다!
+
+			.failureStep
+				p
+					span 설정 파일에 문제가 있습니다.
+					span 서버 콘솔에 자세한 정보가 있습니다..
+				br
+				p(style="font-weight: 200;")
+					span 에 있는 문서를 확인하십시오
+					a(href="https://github.com/IBM-Blockchain/marbles/blob/v4.0/docs/config_file.md" target="_blank" style="color:#fff;") config files.
+			br
+			.successStep Step 1 Complete
+			br
+			br
+			button.nextStep(nextstepid="step2") 다음 단계
+
+		//----------------- Step 2 Content [Enroll Admin]
+		#step2.stepWrap.hidden
+			.stepHeader
+				span.fa.fa-user
+				span &nbsp;&nbsp;등록 관리자
+			.stepDescription
+				span 다음으로 귀하를 회사의 관리자로 등록하려고 합니다.
+				span 이 단계에서는 인증 기관(CA)에 연락하여 이를 제공했습니다&nbsp;
+				span.backgroundMe 등록ID
+				span &nbsp;and&nbsp;
+				span.backgroundMe 비밀등록
+				span &nbsp; 연결 프로필.
+				br
+
+			include ./template/loading.pug
+
+			.failureStep
+				p 죄송합니다. CA에 대해 관리자를 등록할 수 없습니다.
+				p 다시 시도하려면 아래 설정을 수정하세요.
+
+			.startupWrap
+				.settingsExpand
+					span.fa.fa-plus-square
+					span &nbsp;&nbsp;JSON 세팅
+
+				.settingsContent
+					.stepInputLegend
+						span CA's
+						span.backgroundMe api_url
+					input(type="text" placeholder="CA ex: 192.168.99.100:8888" name="caUrl" value=bag.creds.ca).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 인증 기관에 연결하기 위한 기본 HTTP URL입니다. 프로토콜과 포트를 포함해야 합니다.
+					br
+					.stepInputLegend
+						span.backgroundMe 등록Id
+					input(type="text" placeholder="Enroll Id" name="enrollId" value=bag.creds.admin_id).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext CA의 유효한 등록 ID입니다. CA에 이미 등록되어 있어야 합니다.
+					br
+					.stepInputLegend
+						span.backgroundMe 비밀 등록
+					input(type="text" placeholder="Enroll Secret" name="enrollSecret" value=bag.creds.admin_secret).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 비밀 등록은 CA에 등록된 등록 ID와 쌍을 이룹니다.
+
+			.successStep 2단계 완료
+			button.nextStep(nextstepid="step3") 다음 단계
+			button.runStep(stepid="step2" nextstepid="step3")#enrollAdmin 재시도
+
+			.showMoreDetails 왜 이것이 중요할까요?
+			.moreDetails
+				span 성공하면 응용 프로그램에서 등록 인증서를 다운로드합니다.
+				span 인증서가 향후 Clover 거래 인증에 사용됩니다..
+				span 이 기능이 없으면 트랜잭션을 생성할 수 없습니다.
+
+		//----------------- Step 3 Content [Find Chaincode]
+		#step3.stepWrap.hidden
+			.stepHeader
+				span.fa.fa-file-text
+				span &nbsp;&nbsp;체인코드 찾기
+			.stepDescription
+				span 이제 채널에서 체인코드를 찾아야 합니다.
+				span 연결 프로필에 채널을 확인하세요.&nbsp;
+				span.backgroundMe #{bag.creds.channel}
+				span &nbsp;명명 된 체인 코드에 대해&nbsp;
+				span.backgroundMe #{bag.creds.chaincode_id}
+				span &nbsp;.
+				br
+
+			include ./template/loading.pug
+
+			.failureStep
+				p 체인코드를 찾을 수 없습니다
+				p 다시 시도하려면 아래 설정을 수정하세요.
+				p(style="font-weight: 200;") 또는...
+				p(style="font-weight: 200;")
+					span 응용 프로그램을 처음 사용하는 경우&nbsp;
+					a(href="https://github.com/IBM-Blockchain/marbles/tree/v4.0#3-install-and-instantiate-chaincode" target="_blank" style="color:#fff;") 설치/인스턴스화
+					span &nbsp;Clover 체인코드
+
+			.startupWrap
+				.settingsExpand
+					span.fa.fa-plus-square
+					span &nbsp;&nbsp;JSON 세팅
+
+				.settingsContent
+					.stepInputLegend
+						span 오더러
+						span.backgroundMe discovery_url
+					input(type="text" placeholder="Orderer ex: 192.168.99.100:5151" name="ordererUrl" value=bag.creds.orderer).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 이것은 주문자에게 도달하기 위한 기본 gRPC URL입니다. 프로토콜과 포트를 포함해야 합니다. 주문을 위해 여기로 Clover  거래를 보냅니다.
+					br
+					.stepInputLegend
+						span 피어
+						span.backgroundMe discovery_url
+					input(type="text" placeholder="Peer ex: 192.168.99.100:7051" name="peerUrl" value=bag.creds.peer).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 이것은 피어에 도달하기 위한 기본 gRPC URL입니다. 프로토콜과 포트를 포함해야 합니다. 보증을 위해 여기에서 Clover 거래를 보냅니다.
+					br
+					.stepInputLegend
+						span.backgroundMe channel
+					input(type="text" placeholder="Channel Name" name="channelId" value=bag.creds.channel).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 블록체인 네트워크에서 생성한 채널의 이름입니다.
+					br
+					.stepInputLegend
+						span.backgroundMe 체인코드_id
+					input(type="text" placeholder="Chaincode ID" name="chaincodeId" value=bag.creds.chaincode_id).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 이것은 인스턴스화된 체인코드의 이름입니다. 예: Colver.
+					br
+					.stepInputLegend
+						span.backgroundMe 체인코드_버젼
+					input(type="text" placeholder="Chaincode ID" name="chaincodeVersion" value=bag.creds.chaincode_version).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 이것은 인스턴스화된 체인코드의 버전입니다.. 예: v4.
+
+			.successStep 3단계 완료
+			br
+			button.nextStep(nextstepid="step4") 다음 단계
+			button.runStep(stepid="step3" nextstepid="step4")#findCcButton 재시도
+
+			.showMoreDetails 이것이 중요한 이유?
+			.moreDetails
+				span 네트워크의 각 채널에는 트랜잭션을 저장하는 자체 원장이 있습니다..
+				span 체인코드가 채널에서 실행될 때 이러한 트랜잭션을 생성하고 저장할 수 있습니다.
+				span 채널에서 다른 유형의 활동이 있을 수 있습니다. 하지만 이 활동과 관련이 없습니다.
+				br
+				br
+				span 체인 코드 자체는 GoLang으로 작성된 코드입니다..
+				span 자산(Clover)과 Clover 양도 관련 규칙을 정의합니다.
+				span 체인 코드 거래는 Colver, Clover 소유주, Clover 회사를 만들고 수정합니다.
+				span 채널에서 체인 코드를 인스턴스화할 때까지 이 애플리케이션을 사용할 수 없습니다.
+
+		//----------------- Step 4 Content [Register Marble Owners]
+		#step4.stepWrap.hidden
+			.stepHeader
+				span.fa.fa-group
+				span &nbsp;&nbsp;자산 생성
+			.stepDescription
+				span 거의 다왔다규! 힘내라규!
+				span Clover 무역 회사로서 당신은 새로운 Clover 소유자를 데려올 수 있습니다.
+				span 이 Clover 소유자는 사용자 기반을 나타냅니다.
+				br
+				br
+				span 이 단계는 Clover 소유자와 소유자당 3개의 구슬을 생성합니다.
+
+			include ./template/loading.pug
+
+			.startupWrap
+				#registerOwnersInputPanel.settingsContent
+					.stepInputLegend
+						span 회사
+					input(type="text" value=bag.marble_company disabled="disabled").longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 구성 파일을 편집하고 응용 프로그램을 다시 시작하여 회사 이름을 변경하십시오.
+					br
+					.stepInputLegend
+						span Clover 소유주
+					input(type="text" placeholder="bob, bill, amy" name="marbleOwners" value=bag.creds.marble_owners).longer
+					span.fa.fa-question-circle.settingstooltip
+						span.tooltiptext 생성하려는 Clover 소유자의 이름을 입력합니다. 쉼표로 구분.
+
+			.successStep 4단계 완료
+			button.nextStep(nextstepid="step5" style="display: inline-block") 단계 스킵하기
+			button.runStep(stepid="step4" nextstepid="step5")#registerOwners 생성
+
+		//----------------- Step 5 Content [Finished]
+		#step5.stepWrap.hidden.success
+			span.fa.fa-smile-o.fa-3x
+			.stepDescription(style="text-align:center")
+				span 귀하의 Clover 응용 프로그램을 사용할 준비가 되었습니다!
+				br
+				br
+
+			button(type="button").closeStartUp 시작하기

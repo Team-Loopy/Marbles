@@ -1,0 +1,48 @@
+#settingsPanel
+
+	span.fa.fa-close#closeSettings
+
+	.settingsWrap
+		h3 스토리 모드
+		hr
+		p 스토리 모드를 이용하면 호출프로세스의 단계별 안내를 받을 수 있습니다.
+		p Clover를 처음 이용하시는 경우는 스토리 모드를 활성화 하세요. 
+
+		br
+		br
+		p 
+			span 스토리 모드
+			span#storyStatus.storyOn 온
+		p
+			button(type="button")#disableStoryMode 사용안함
+			span &nbsp;&nbsp;
+			button(type="button" disabled="disabled")#enableStoryMode 사용함
+	
+	.settingsWrap(hidden)
+		h3 
+			span 보증
+			span#construction (작업 진행 중... 아직 작동하지 않음)
+		hr
+		p 
+			span 제안이 성공하려면 여러 피어의 승인을 받아야 합니다. 
+			span 정확한 보증 수는 네트워크 정책에 따라 결정됩니다. 
+			span Clover 또는 Fabric을 처음 사용하는 경우 첫 번째 보증인을 선택하십시오
+		br
+		br
+		p 아래의 모든 확인된 보증인은 Clover를 제안을 받게 됩니다.
+		
+		.settingPeersWrap
+			p 
+				span 보증인 1
+				input(type="text" placeholder="Peer URL" name="peer1").longer
+				input(type="checkbox" name="peer1")
+
+			p 
+				span 보증인 2
+				input(type="text" placeholder="Peer URL" name="peer2").longer
+				input(type="checkbox" name="peer2")
+
+		p
+			button(type="button" disabled="disabled") 보증인 추가
+
+	

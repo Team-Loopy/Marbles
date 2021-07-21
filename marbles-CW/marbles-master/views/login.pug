@@ -1,0 +1,76 @@
+extends ./template/layout.pug
+	
+	
+block custom_header
+	// --------------- Header -------------- //
+	script(type='text/javascript').
+		$(document).ready(function(){
+
+		});
+		
+		
+block navpanel
+	// --------------- Navigation Bar  -------------- //
+	include ./template/nav.pug
+	
+	
+block content
+	// --------------- Main Stuff  -------------- //
+	#notificationWrap
+	
+	#contentPanel
+		
+		// --------------- Welcome Panel
+		#welcomePanel
+			h2(style="font-weight: 600;") 환영합니다.Clover 데모 앱입니다.
+
+			#adminText
+				span 안녕하세요.
+				span#loginCompany Clover 데모
+				span 관리자입니다 !
+
+			p 
+				span 이 애플리케이션을 사용하면 Hyperledger Fabric 블록체인을 통해 간단한 자산 거래를 시뮬레이션할 수 있습니다.  
+				span 여러 피어를 연결하여 더 큰 Clover 사용자 기반과 거래할 수 있습니다. 
+				span 이 응용 프로그램에서 다음을 수행할 수 있습니다. 
+			
+			#split1x3Wrap
+				.split1x3
+					.welcomeTitle
+						span 거래
+						//br
+							span Assets
+					br
+					.blub1x3 Clover 사용자 기반에서 자산(Clover) 전송
+					img(src="/imgs/welcome_img1.png").welcomeImg
+				.split1x3
+					.welcomeTitle
+						span 생성
+						//br
+							span Marbles
+					br
+					.blub1x3 새로운 자산 생성 (Clover)
+					img(src="/imgs/welcome_img2.png").welcomeImg
+				.split1x3
+					.welcomeTitle
+						span 확인
+						//br
+							span Ownership
+					br
+					.blub1x3 클로버 트랜젝션 확인
+					img(src="/imgs/welcome_img3.png").welcomeImg
+			br
+			br
+
+			p 
+				span 자세한 내용은 다음 사이트를 참조하십시오.
+				a(href="https://github.com/IBM-Blockchain/marbles/tree/v4.0") GitHub
+				span.
+
+
+		// --------------- Login Panel
+		form#loginPanel(method="POST" action="#")
+			p Enter
+			hr
+			input(type="text" placeholder="username" value="admin" name="username")
+			button(type="submit") 로그인

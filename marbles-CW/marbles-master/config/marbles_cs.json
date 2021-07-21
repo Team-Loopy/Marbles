@@ -1,0 +1,14 @@
+{
+	"cred_filename": "connection_profile_cs.json",
+	"use_events": true,
+	"keep_alive_secs": 120,
+	"company": "Clover Wallet",
+	    "usernames": [
+		"DongGyun",
+			"SolRi",
+			"SeokHwan",
+			"Jisu",
+			"Jungki"
+	    ],
+	"port": 32001
+}

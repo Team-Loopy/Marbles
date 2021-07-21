@@ -1,0 +1,83 @@
+-////////////////////////////////////////////////// HTML //////////////////////////////////////////////////
+-//Begin HTML
+doctype html
+html
+	//Built by: Me
+	//ETI Labs
+	//Copyright 2016  - IBM
+	head
+		title #{title}
+		meta(name="viewport" content="initial-scale=1.0, user-scalable=no")
+		link(rel="icon" href="/imgs/favicon.ico" sizes="16x16")
+		link(rel="icon" href="/imgs/favicon-32.png" sizes="32x32")
+		link(rel="icon" href="/imgs/favicon-96.png" sizes="96x96")
+		link(rel="stylesheet" href="/css/font-awesome-4.5.0/css/font-awesome.min.css")
+		link(type="text/css" rel="stylesheet" href="/css/main.min.css?v=" + bag.csshash)
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Serif+KR&display=swap" rel="stylesheet")
+		script(src='/js/util/jquery-2.2.4.min.js?v=' + bag.jshash)
+		script(src='/js/util/jquery-ui-1.11.4/jquery-ui.min.js')
+		script(src='/js/util/jquery.ui.touch-punch.min.js')
+		script(src='/js/funk.js?v=' + bag.jshash)
+		script(src='/js/blockchain.js?v=' + bag.jshash)
+		script(src='/js/ui_building.js?v=' + bag.jshash)
+		script(type='text/javascript').
+			var bag = !{JSON.stringify(bag)};						//throw json over to JS
+			console.log('bag', bag);
+			$(document).ready(function(){
+				$(".colorInput").click(function(){	//do not remove! no idea why but this helps safari open the color picker
+					console.log('...');
+				});
+			});
+		block custom_header
+
+		body
+			#rightEverything
+				#tint
+
+				#navPanel
+					block navpanel
+					span &nbsp;&nbsp;
+					span &nbsp;&nbsp;
+					div#Center
+						span 222만건의 거래, 98.6%의 만족도
+						h1#tile 자산거래의 No.1, Clover wallet 
+						span &nbsp;&nbsp;
+						.bottomAlign
+						input(type="text" placeholder="Clover 소유주 검색" style="margin-left: 0; border-radius:2px;")#searchUsers.longer
+						span.hint(style="margin-left: 10px; font-size: 16px;")
+							span#foundUsers 0
+							span /
+							span#totalUsers 0
+					
+						span &nbsp;&nbsp;
+					
+					
+
+				#mainPanel
+					block content
+
+				br
+				br
+				br
+				#footerPanel
+					block footer
+					span#flexbox 
+						button(disabled="disabled")#ShowaboutPanel 
+							span &nbsp; 어바웃
+						span &nbsp;&nbsp;
+						span &nbsp;&nbsp;
+						button(disabled="disabled")#showSettingsPanel
+							span.fa.fa-gear
+							span &nbsp; 세팅하기
+						span &nbsp;&nbsp;
+						span &nbsp;&nbsp;
+						button(disabled="disabled")#showStartupPanel
+							span.fa.fa-gears
+							span &nbsp; 시작 도움말
+						span &nbsp;&nbsp;
+						span &nbsp;&nbsp;
+
+			#leftEverything
+				include ../panel_audit.pug
