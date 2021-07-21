@@ -4,6 +4,7 @@
 <img width="962" alt="4" src="https://user-images.githubusercontent.com/73014464/126436093-62375c00-1972-45a3-b888-8dbcc5afa48d.png">
 
 2. CMD에서 조직, 소유자 추가 시연
-https://user-images.githubusercontent.com/73014464/126437394-f46c9590-61e3-4eac-9b30-d3b20306e359.mp4
+
+https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-ae3f-85236879e270.mp4
 
 <img width="962" alt="5" src="https://user-images.githubusercontent.com/73014464/126436098-c6672bc3-2996-410a-bda5-5d7a61428020.png">
