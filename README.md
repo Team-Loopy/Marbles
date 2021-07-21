@@ -13,6 +13,8 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 <br>
 <p></p>
 <p></p>
+<p></p>
+<p></p>
 
 <h2>[기존 marble UI design의 아쉬움]</h2>
 
@@ -24,6 +26,7 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 </ul>
 <p></p>
 <p></p>
-
+<p></p>
+<p></p>
 <h2>[기존 marble UI design의 아쉬움]</h2>
 ![로고선정의미](https://user-images.githubusercontent.com/84368302/126465956-c96bca90-b73b-49c2-a947-af0bdcd366fc.gif)
