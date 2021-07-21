@@ -37,12 +37,17 @@ https://user-images.githubusercontent.com/73014464/126437516-c2e7cf73-9ef0-4d0d-
 <h2>[What is Clover Wallet]</h2>
 <img width="711" alt="로고선정 의미" src="https://user-images.githubusercontent.com/84368302/126471907-daf03d36-fba9-4d9e-a34b-171f27de0170.gif">
 <br>
-<h3>트럼프 카드에서 Clover는 시민을 뜻한다.</h3>
+<hr>
+<h3>[Clover wallet 컨셉]</h3>
+<p>트럼프 카드에서 Clover는 시민을 뜻합니다.<p>
 <p>트럼프 카드게임처럼 오늘날의 블록체인은 오락성과 사행성이 강한 이미지입니다.</p>
-<p>Clover wallet은 .</p>
+<p>Clover wallet은 특정단체나 개인이아닌 참여하는 모든 시민을 위한 분산원장입니다..</p>
+<br>
+<hr>
 <ul>
-  <li></li>
-  <li></li>
+  <li>컨셉에 맞게 디자인 적인 측면에서 밝고 화사한 분위기로 구성</li>
+  <li>구름으로 이루어진 배경, 알록달록한 자산 등을 동적인 이미지로 구성함</li>
+  <li>블록체인과 비트코인 이 가지고 있던 부정적이고 도박성이 강한 이미지를 탈피해보고자 </li>
 </ul>
 
 
